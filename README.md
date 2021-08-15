@@ -29,7 +29,7 @@ really a list containing a function to
 
 <!-- -->
 
-  makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()) {
   mCM <- NULL
   set <- function(y){
     x <<- y
@@ -53,7 +53,7 @@ cache and skips the computation. Otherwise, it calculates the mean of
 the data and sets the value of the mean in the cache via the `setmean`
 function.
 
-      cacheSolve <- function(x, ...) {
+  cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     cS <- x$getInverse()
         if(!is.null(cS)){
